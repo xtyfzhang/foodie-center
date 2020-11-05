@@ -181,7 +181,7 @@
 					var serverUrl = app.serverUrl;
 					axios.defaults.withCredentials = true;
 					axios.post(
-							serverUrl + '/merchandise/mycomments/saveList?userId=' + userInfo.id + "&orderId=" + this.orderId,
+							serverUrl + '/merchandise/mycomments/saveList?'  + "orderId=" + this.orderId,
 							orderItemList, 
 							{
 								headers: {
@@ -244,7 +244,7 @@
 					var serverUrl = app.serverUrl;
 					axios.defaults.withCredentials = true;
 					axios.post(
-							serverUrl + '/merchandise/mycomments/pending?userId=' + userInfo.id + "&orderId=" + orderId, {},
+							serverUrl + '/merchandise/mycomments/pending?' + "orderId=" + orderId, {},
 							{
 								headers: {
 									/*'headerUserId': userInfo.id,*/

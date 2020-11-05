@@ -279,7 +279,7 @@
 					var serverUrl = app.serverUrl;
 					axios.defaults.withCredentials = true;
 					axios.post(
-							serverUrl + '/order/myorders/delete?userId=' + userInfo.id + "&orderId=" + orderId, {},
+							serverUrl + '/order/myorders/delete?' + "orderId=" + orderId, {},
 							{
 								headers: {
 									/*'headerUserId': userInfo.id,*/
@@ -309,7 +309,7 @@
 					var serverUrl = app.serverUrl;
 					axios.defaults.withCredentials = true;
 					axios.post(
-							serverUrl + '/order/myorders/confirmReceive?userId=' + userInfo.id + "&orderId=" + orderId, {},
+							serverUrl + '/order/myorders/confirmReceive?' + "orderId=" + orderId, {},
 							{
 								headers: {
 									/*'headerUserId': userInfo.id,*/
@@ -359,7 +359,7 @@
 					var serverUrl = app.serverUrl;
 					axios.defaults.withCredentials = true;
 					axios.post(
-							serverUrl + '/order/myorders/query?userId=' + userInfo.id + "&orderStatus=" + orderStatus +
+							serverUrl + '/order/myorders/query?' + "orderStatus=" + orderStatus +
 							"&page=" + page +
 							"&pageSize=" + pageSize, {}, {
 								headers: {

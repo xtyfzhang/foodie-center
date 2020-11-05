@@ -128,7 +128,7 @@
 						var serverUrl = app.serverUrl;
 						axios.defaults.withCredentials = true;
 						axios.post(
-								serverUrl + '/user/address/list?userId=' + userInfo.id, {},
+								serverUrl + '/user/address/list', {},
 								{
 									headers: {
 										/*'headerUserId': userInfo.id,*/

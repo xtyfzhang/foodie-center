@@ -190,8 +190,8 @@
 					var serverUrl = app.serverUrl;
 					axios.defaults.withCredentials = true;
 					axios.post(
-							serverUrl + '/merchandise/mycomments/query?userId=' + userInfo.id +
-							"&page=" + page +
+							serverUrl + '/merchandise/mycomments/query?' +
+							"page=" + page +
 							"&pageSize=" + pageSize, {}, {
 								headers: {
 									/*'headerUserId': userInfo.id,*/

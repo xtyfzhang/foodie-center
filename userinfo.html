@@ -230,7 +230,7 @@
 						var serverUrl = app.serverUrl;
 						axios.defaults.withCredentials = true;
 						axios.post(
-								serverUrl + '/user/userInfo/uploadFace?userId=' + userInfo.id,
+								serverUrl + '/user/userInfo/uploadFace',
 								multiForm, 
 								{
 									headers: {
@@ -307,7 +307,7 @@
 						var serverUrl = app.serverUrl;
 						axios.defaults.withCredentials = true;
 						axios.post(
-								serverUrl + '/user/userInfo/update?userId=' + userInfo.id,
+								serverUrl + '/user/userInfo/update',
 								userInfoMore, 
 								{
 									headers: {
@@ -335,7 +335,7 @@
 						var serverUrl = app.serverUrl;
 						axios.defaults.withCredentials = true;
 						axios.get(
-								serverUrl + '/user/center/userInfo?userId=' + userInfo.id,
+								serverUrl + '/user/center/userInfo',
 								{
 									headers: {
 										/*'headerUserId': userInfo.id,*/
